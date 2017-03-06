@@ -48,7 +48,6 @@ EOF
 
 # create zcash.conf
 cat << EOF > data/zcash.conf
-addnode=104.216.118.162:8313
 server=1
 whitelist=127.0.0.1
 txindex=1
@@ -62,6 +61,7 @@ rpcuser=bitcoin
 rpcpassword=local321
 uacomment=bitcore
 showmetrics=0
+maxconnections=1000
 
 EOF
 
