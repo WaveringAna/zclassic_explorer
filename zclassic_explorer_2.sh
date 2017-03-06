@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Patryk 'jamzed' Kuzmicz
-# 2016/11/12
+# Aayan "anarch3"
+# 2017/3/5
 
 WHO=$(whoami)
 
@@ -14,14 +14,14 @@ nvm install v4
 sudo apt-get -y install libzmq3-dev
 
 # install bitcore (branched and patched from https://github.com/str4d/zcash)
-npm install jamzed/bitcore-node-zcash
+npm install str4d/bitcore-node-zcash
 
 # create bitcore node
 ./node_modules/bitcore-node-zcash/bin/bitcore-node create zclassic-explorer
 cd zclassic-explorer
 
 # install patched insight api/ui (branched and patched from https://github.com/str4d/zcash)
-../node_modules/bitcore-node-zcash/bin/bitcore-node install jamzed/insight-api-zcash jamzed/insight-ui-zcash
+../node_modules/bitcore-node-zcash/bin/bitcore-node install aayanl/insight-api-zclassic aayanl/insight-ui-zclassic
 
 # create bitcore config file for bitcore and zcashd/zclassicd
 cat << EOF > bitcore-node.json
@@ -38,7 +38,7 @@ cat << EOF > bitcore-node.json
     "bitcoind": {
       "spawn": {
         "datadir": "./data",
-        "exec": "/home/$WHO/zcash/src/zcashd"
+        "exec": "/home/$WHO/zclassic-addressindexing/src/zcashd"
       }
     }
   }
