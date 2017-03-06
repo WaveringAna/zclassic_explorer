@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Patryk 'jamzed' Kuzmicz
-# 2016/11/12
+# Aayan "anarch3"
+# 2017/3/5
 
 sudo apt-get -y install \
       build-essential pkg-config libc6-dev m4 g++-multilib \
@@ -10,9 +10,9 @@ sudo apt-get -y install \
 
 # clone and build patched version of zcash (branched and patched from https://github.com/str4d/zcash)
 
-git clone https://github.com/jamzed/zcash.git
-cd zcash
-git checkout v1.0.0-bitcore-zclassic
+git clone https://github.com/aayanl/zclassic-addressindexing.git
+cd zclassic-addressindexing
+git checkout v1.0.4-bitcore-zclassic
 ./zcutil/fetch-params.sh
 ./zcutil/build.sh -j$(nproc)
 
