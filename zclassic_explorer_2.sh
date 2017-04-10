@@ -21,7 +21,7 @@ npm install str4d/bitcore-node-zcash
 cd zclassic-explorer
 
 # install patched insight api/ui (branched and patched from https://github.com/str4d/zcash)
-../node_modules/bitcore-node-zcash/bin/bitcore-node install aayanl/insight-api-zclassic aayanl/insight-ui-zclassic
+../node_modules/bitcore-node-zcash/bin/bitcore-node install str4d/insight-api-zcash str4d/insight-ui-zcash
 
 # create bitcore config file for bitcore and zcashd/zclassicd
 cat << EOF > bitcore-node.json
