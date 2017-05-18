@@ -38,7 +38,7 @@ cat << EOF > bitcore-node.json
     "bitcoind": {
       "spawn": {
         "datadir": "./data",
-        "exec": "/home/aayan/zclassic-addressindexing/src/zcashd"
+        "exec": "$HOME/zclassic-addressindexing/src/zcashd"
       }
     },
      "insight-ui-zcash": {
